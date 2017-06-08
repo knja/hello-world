@@ -40,6 +40,9 @@
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wao-lg-z97">
                                         <rect key="frame" x="0.0" y="66.5" width="68" height="30"/>
                                         <state key="normal" title="speichern"/>
+                                        <connections>
+                                            <action selector="setDefaultLabelText:" destination="BYZ-38-t0r" eventType="touchUpInside" id="gbK-SU-vWf"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <constraints>
@@ -54,6 +57,10 @@
                             <constraint firstItem="Vxy-Qq-Eug" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="20" id="jOt-Ke-DKM"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="mealNameLabel" destination="heN-rA-ufJ" id="roy-ec-Se5"/>
+                        <outlet property="nameTextField" destination="EAV-dv-wV2" id="fBr-2D-F5S"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
