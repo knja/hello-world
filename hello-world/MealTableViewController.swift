@@ -9,6 +9,9 @@
 import UIKit
 
 class MealTableViewController: UITableViewController {
+    
+    //MARK: Properties
+    var meals = [Meal]()
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -36,15 +39,27 @@ class MealTableViewController: UITableViewController {
     }
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        // Fehler bearbeiten
         return meals.count
     }
 
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cellidentifier = "MealTableViewCell"
-        let cell = tableView.dequeueReusableCell(withIdentifier: cellidentifier, for: indexPath)
         
-        // Configure the cell...
+        // Table view cells are reused and should be dequeued using a cell identifier.
+        let cellidentifier = "MealTableViewCell"
+        
+        guard let cell = tableView.dequeueReusableCell(withIdentifier: cellidentifier, for: indexPath)
+            as? MealTableViewCell else {
+                fatalError("The dequeued cell is not an instance of MealTableViewCell.")
+        }
+        
+         // Fetches the appropriate meal for the data source layout.
+        let meal = meals[indexPath.row]
+        
+        cell.nameLabel.text = meal.name
+        cell.photoImageView.image = meal.photo
+        cell.ratingControl.rating = meal.rating
 
         return cell
     }
