@@ -13,7 +13,7 @@
 		E16B0CAB1EE976F600AB9455 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E16B0CA91EE976F600AB9455 /* LaunchScreen.storyboard */; };
 		E16B0CB61EE976F600AB9455 /* hello_worldTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E16B0CB51EE976F600AB9455 /* hello_worldTests.swift */; };
 		E16B0CC11EE976F600AB9455 /* hello_worldUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E16B0CC01EE976F600AB9455 /* hello_worldUITests.swift */; };
-		E16B0CCF1EEC14DA00AB9455 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E16B0CCE1EEC14DA00AB9455 /* ViewController.swift */; };
+		E16B0CCF1EEC14DA00AB9455 /* MealViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E16B0CCE1EEC14DA00AB9455 /* MealViewController.swift */; };
 		E16B0CD11EEDC5C900AB9455 /* RatingControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = E16B0CD01EEDC5C900AB9455 /* RatingControl.swift */; };
 		E16B0CD31EEE81B200AB9455 /* Meal.swift in Sources */ = {isa = PBXBuildFile; fileRef = E16B0CD21EEE81B200AB9455 /* Meal.swift */; };
 		E16B0CD51EEEA29300AB9455 /* MealTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E16B0CD41EEEA29300AB9455 /* MealTableViewCell.swift */; };
@@ -50,7 +50,7 @@
 		E16B0CBC1EE976F600AB9455 /* hello-worldUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "hello-worldUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E16B0CC01EE976F600AB9455 /* hello_worldUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = hello_worldUITests.swift; sourceTree = "<group>"; };
 		E16B0CC21EE976F600AB9455 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		E16B0CCE1EEC14DA00AB9455 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		E16B0CCE1EEC14DA00AB9455 /* MealViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MealViewController.swift; sourceTree = "<group>"; };
 		E16B0CD01EEDC5C900AB9455 /* RatingControl.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RatingControl.swift; sourceTree = "<group>"; };
 		E16B0CD21EEE81B200AB9455 /* Meal.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Meal.swift; sourceTree = "<group>"; };
 		E16B0CD41EEEA29300AB9455 /* MealTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MealTableViewCell.swift; sourceTree = "<group>"; };
@@ -106,7 +106,7 @@
 			isa = PBXGroup;
 			children = (
 				E16B0CA01EE976F600AB9455 /* AppDelegate.swift */,
-				E16B0CCE1EEC14DA00AB9455 /* ViewController.swift */,
+				E16B0CCE1EEC14DA00AB9455 /* MealViewController.swift */,
 				E16B0CD21EEE81B200AB9455 /* Meal.swift */,
 				E16B0CD01EEDC5C900AB9455 /* RatingControl.swift */,
 				E16B0CD41EEEA29300AB9455 /* MealTableViewCell.swift */,
@@ -276,7 +276,7 @@
 			files = (
 				E16B0CD31EEE81B200AB9455 /* Meal.swift in Sources */,
 				E16B0CD91EEED38C00AB9455 /* MealTableViewController.swift in Sources */,
-				E16B0CCF1EEC14DA00AB9455 /* ViewController.swift in Sources */,
+				E16B0CCF1EEC14DA00AB9455 /* MealViewController.swift in Sources */,
 				E16B0CD11EEDC5C900AB9455 /* RatingControl.swift in Sources */,
 				E16B0CA11EE976F600AB9455 /* AppDelegate.swift in Sources */,
 				E16B0CD51EEEA29300AB9455 /* MealTableViewCell.swift in Sources */,
