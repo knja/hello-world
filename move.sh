@@ -3,7 +3,7 @@
 prefix=temp
 suffix=$(date +%Y-%m-%d)  # The "+%s" option to 'date' is GNU-specific.
 filename=$prefix.$suffix
-
+echo "das ist $SCHEME"
 
 mv $BUILD_SOURCESDIRECTORY/output/$SDK/$CONFIGURATION/_XcodeTaskExport_hello-world/*.ipa $BUILD_SOURCESDIRECTORY/output/$SDK/$CONFIGURATION/$filename.ipa
 # #!/bin/bash
