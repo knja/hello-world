@@ -1,7 +1,7 @@
 #!/bin/bash
 
 DATE='date +%Y-%m-%d'
-IPARENAME = $DATE_$SCHEMA
+IPARENAME=$DATE_$SCHEMA
 
 mv $BUILD_SOURCESDIRECTORY/output/$SDK/$CONFIGURATION/_XcodeTaskExport_hello-world/*.ipa $BUILD_SOURCESDIRECTORY/output/$SDK/$CONFIGURATION/$IPARENAME.ipa
 # #!/bin/bash
