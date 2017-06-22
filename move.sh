@@ -1,8 +1,11 @@
 #!/bin/bash
 
-DATE='date +%Y-%m-%d'
+prefix=temp
+suffix=$(date +%Y-%m-%d)  # The "+%s" option to 'date' is GNU-specific.
+filename=$prefix.$suffix
 
-mv $BUILD_SOURCESDIRECTORY/output/$SDK/$CONFIGURATION/_XcodeTaskExport_hello-world/*.ipa $BUILD_SOURCESDIRECTORY/output/$SDK/$CONFIGURATION/$DATE.ipa
+
+mv $BUILD_SOURCESDIRECTORY/output/$SDK/$CONFIGURATION/_XcodeTaskExport_hello-world/*.ipa $BUILD_SOURCESDIRECTORY/output/$SDK/$CONFIGURATION/$filename.ipa
 # #!/bin/bash
 # echo "Hello World"
 # echo "AGENT_WORKFOLDER is $AGENT_WORKFOLDER"
