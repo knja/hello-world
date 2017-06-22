@@ -1,6 +1,6 @@
 #!/bin/bash
 
-# mv output/$(SDK)/$(Configuration)/_XcodeTaskExport_hello-world/*.ipa output/$(SDK)/$(Configuration)/_XcodeTaskExport_hello-world/new.ipa
+mv $BUILD_SOURCESDIRECTORY/output/$SDK/$CONFIGURATION/_XcodeTaskExport_hello-world/*.ipa $BUILD_SOURCESDIRECTORY/output/$SDK/$CONFIGURATION/new.ipa
 #!/bin/bash
 echo "Hello World"
 echo "AGENT_WORKFOLDER is $AGENT_WORKFOLDER"
