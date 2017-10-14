@@ -27,7 +27,6 @@ class MealTableViewController: UITableViewController {
             // Load the sample data.
             loadSampleMeals()
         }
-
     }
 
     override func didReceiveMemoryWarning() {
